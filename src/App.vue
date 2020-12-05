@@ -83,14 +83,14 @@ export default {
     convert: function (fromValue, option, result) {
       if (option == 1) {
         console.log("Fahrenheit was chosen");
-        result = (fromValue * 1.8) + 32;
+        this.result = (fromValue * 1.8) + 32;
         console.log("The result was " + result);
         return result;
       }
 
       if (option == 2) {
         console.log("Kelvin was chosen");
-        result = fromValue + 273.15;
+        this.result = fromValue + 273.15;
         console.log("The result was " + result);
         return result;
       } else {
